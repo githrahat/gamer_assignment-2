@@ -20,6 +20,7 @@ a{
 .btn-primary{
   padding: 17px 40px;
   border-radius: 48px;
+  font-weight: 700;
   border: none;
   color: #FFF;
   margin-right: 20px;
@@ -29,16 +30,23 @@ a{
   padding: 17px 40px;
   border-radius: 48px;
   border: none;
+  font-weight: 700;
   color: #FFF;
   background: #4EC5F7;
 }
-
-
-
-
+.icon-btn{
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(11, 2, 35, 0.10);
+}
+.icon-btn img {
+  width: 40px;
+  padding: 0 7px;
+}
 /* header styles */
 nav{
-  padding: 40px 0px;
+  padding: 25px 0px;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -60,14 +68,19 @@ nav{
   font-weight: 700;
   color: #FF42A5;
 }
-.nav-btn a{
+.nav-btn a {
   margin-right: 10px;
   color: #3C354F;
   text-align: center;
   font-size: 18px;
+  align-items: center;
+  display: flex;
   font-weight: 500;
 }
-
+.icon{
+  width: 18px;
+  margin-right: 10px;
+}
 .banner{
   display: flex;
   align-items: center;
@@ -96,7 +109,9 @@ nav{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.banner-text p{
+.banner-text p {
+  display: flex;
+  align-items: center;
   color: #534C64;
   padding-bottom: 15px;
   text-align: left;
@@ -115,11 +130,11 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px 226px;
+    padding: 50px 226px;
     text-align: right;
 }
 .gamer-img img{
-width: 560px;
+  width: 675px;
 }
 .gamer-text .we{
   text-align: right;
@@ -190,7 +205,34 @@ background-clip: text;
   font-weight: 500;
   line-height: 30px; /* 150% */
 }
-
+.img-box{
+  position: relative;
+}
+.img-box:hover .img-box-btn{
+  visibility: visible;
+}
+.img-box-btn {
+  transition: 0.5s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 17px;
+  height: 84%;
+  text-align: center;
+  padding: 145px 0;
+  opacity: .7;
+  visibility: hidden;
+  border: 5px solid #F948B2;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;}
+.img-box-btn h3{
+  color: #F948B2;
+}
+.img-box-btn img{
+  width: 60px;
+  color: #FFF;
+}
 
 /* play instantly section starts */
 .play-instantly {
@@ -312,6 +354,7 @@ background-clip: text;
   display: flex;
   align-items: center;
   gap: 150px;
+  padding: 25px 0;
 }
 .career-name h3{
   color: #FFF;
@@ -328,10 +371,9 @@ background-clip: text;
 }
 
 
-.btn-third {
+.btn-third{
     padding: 17px 40px;
     border-radius: 48px;
-    border: none;
     color: #F948B2;
     background: #FFF;
 }
@@ -339,7 +381,9 @@ background-clip: text;
 /* developed game section starts */
 .developed-games{
   margin: 0 auto;
-  padding: 80px 200px;
+  padding: 80px 145px;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
 }
 .games-container{
   display: flex;
@@ -357,10 +401,98 @@ background-clip: text;
 display: flex;
 align-items: center;
 gap: 20px;
+background-color: #fff;
+padding: 10px;
+border-radius: 50px;
+border: 1px solid transparent;
 }
+.games-box:hover{
+  border: 1px solid #F948B2;
+  color: #F948B2;
+}
+
 
 /* footer starts */
 footer{
+  text-align: center;
   background: #0B0223;
   padding: 100px;
 }
+.footer-logo{
+  align-items: center;
+  display: flex;
+  gap: 5%;
+  padding: 0px 570px;
+}
+.footer-logo h3{
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-navbar{
+  padding: 50px 0;
+}
+.footer-navbar a{
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.footer-navbar a:hover{
+  color: #F948B2;
+}
+.footer-page a{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 50px;
+}
+.copyright-text{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-social-link ul {
+  padding: 15px 525px;
+  display: flex;
+  align-items: center;
+}
+.footer-social-link img{
+  width: 70%;
+
+}
+
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+  
