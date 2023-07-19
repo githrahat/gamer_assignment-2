@@ -561,14 +561,57 @@ footer{
   padding: 0px 280px;
 }
 
-
-
-
-
-
-
-
-
-
 }
-  
+
+/* Tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width:960px) {
+header,
+.online-games,
+.play-instantly,
+.play-games,
+.career-section,
+.developed-games,
+footer{
+  width: 1024px;
+}
+.banner{
+  padding: 40px 0;
+}
+.banner-img img{
+  width: 400px;
+}
+.section-gamer{
+  padding: 50px 100px;
+  width: 1024px;
+}
+.gamer-img img {
+  width: 420px;
+}
+.img-container{
+  flex-direction: column;
+}
+.play-instantly{
+  flex-direction: column;
+}
+.play-instantly-text,
+.play-instantly-text p,
+.play-games-text,
+.play-games-text p{
+  text-align: center;
+  padding: 10px 0;
+}
+.play-games{
+  flex-direction: column-reverse;
+}
+.career-img img {
+  width: 374px;
+}
+.career-text{
+  padding: 60px;
+}
+.footer-logo {
+  padding: 0 285px;
+}
+
+    
+}
